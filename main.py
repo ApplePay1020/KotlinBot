@@ -1,4 +1,5 @@
 import discord
+import os
 
 client = discord.Client()
 
@@ -61,5 +62,5 @@ async def on_message(message):
     if message.content.startswith("!폰허브"):
         await message.channel.send("https://www.police.go.kr/index.do")
 
-
-client.run("Nzg1NDEyNDAyMDgyNDgwMTM4.X83eTA.3cy1iG3GZ-1c_eAGOil-eMu-C0M")
+assess_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
